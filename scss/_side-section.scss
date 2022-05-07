@@ -1,0 +1,51 @@
+@use './config' as *;
+@use './globals' as *;
+
+.announcements {
+    background-color: #fff;
+    padding: rem(25) rem(25);
+    border-radius: rem(15);
+    &__title {
+        font-size: 1.5rem;
+        color: $secondarytextColor;
+    }
+}
+.trendings {
+    background-color: #fff;
+    padding: rem(25) rem(25);
+    border-radius: rem(15);
+    &__title {
+        font-size: 1.5rem;
+        color: $secondarytextColor;
+    }
+}
+.announcement {
+    &__title {
+       font-size: rem(15);
+       color: $secondarytextColor;
+       margin: 0;
+       margin-top: rem(20);
+    }
+    &:last-child {
+        p {
+            border: none;
+        }
+    }
+    p {
+        font-size: rem(13);
+        margin: 0;
+        padding-bottom: rem(20);
+        border-bottom: 1px solid black;
+       
+    }
+}
+.trending {
+    &__name {
+        font-size: rem(15);
+        color: $secondarytextColor;
+        font-weight: 400;
+    }
+    &__description {
+        font-size: rem(13);
+    }
+}

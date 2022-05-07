@@ -4,7 +4,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 75px 75px 1fr;
+    grid-template-rows: 75px 100px 1fr;
 }
 .header {
     
@@ -13,6 +13,8 @@ body {
 .nav {
     
     grid-row: 2/3;
+    align-self: center;
+
 }
 .sidebar {
     
@@ -21,4 +23,15 @@ body {
 .main {
     
     grid-row: 3/-1;
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        grid-gap: rem(20);
+        grid-auto-rows: 200px;
+    }
+    .side__section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: rem(17);
+    }
 }
