@@ -177,6 +177,8 @@ body {
   padding: 2.25rem 1.875rem;
   transform: translateX(-16.25rem);
   transition: transform 450ms ease-in-out;
+  color: #fff;
+  font-weight: 500;
 }
 .sidebar.open {
   transform: translateX(0);
@@ -228,6 +230,7 @@ body {
 .hamburger__menu.open span {
   opacity: 1;
   transform: rotate(45deg) translate(2px, -5px);
+  background-color: #fff;
 }
 .hamburger__menu.open span:nth-last-child(2) {
   opacity: 0;
@@ -242,7 +245,7 @@ body {
   background-color: #000;
   height: 0.1875rem;
   transform-origin: 4px 0px;
-  transition: transform 450ms ease-in-out, opacity 450ms ease-in-out;
+  transition: transform 450ms ease-in-out, opacity 450ms ease-in-out, background-color 450ms ease-in-out;
 }
 .hamburger__menu span:first-child {
   transform-origin: 0% 0%;
