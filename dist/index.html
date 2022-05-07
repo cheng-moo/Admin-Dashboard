@@ -4,11 +4,184 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/main.css">
     <title>Admin Dashboard</title>
 </head>
 <body>
-    
-    <script src="script.js"></script>
+    <header class="header">
+        <div class="header__searchbar">
+            <span class="header__searchbar--icon"><img src="../dist/images/magnify.png" alt="search"></span>
+            <input type="search" id="searchbar" name="searchbar">
+        </div>
+        <div class="header__items">
+            <div class="header__items--bell"> <img src="../dist/images/bell-ring-outline.png" alt="bell">
+            </div>
+            <div class="header__items--profile"></div>
+            <div class="header__items--name">Cheng_Mo_</div>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="nav__user">
+            <div class="nav__user--profile"></div>
+            <div class="nav__user--welcome">
+                <h5>Hi there,</h5>
+                <h1>Cheng_Mo_ (@Cheng_Mo_)</h1>
+            </div>
+        </div>
+        <div class="nav__items">
+            <ul>
+                <li>New</li>
+                <li>Upload</li>
+                <li>Share</li>
+            </ul>
+        </div>
+    </nav>
+    <div class="hamburger__menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <aside class="sidebar">
+        <div class="sidebar__title">
+            <span class="logo"><img src="../dist/images/atomic-icon.svg" alt="logo"></span>
+            <h1>Dashboard</h1>
+        </div>
+        <div class="sidebar__items">
+            <div class="sidebar__items--section1">
+                <ul>
+                    
+                    <li><span class="icon"><img src="/dist/images/home.png" alt="home"></span>Home</li>
+                    <li><span class="icon"><img src="/dist/images/card-account-details-outline.png" alt="profile"></span>Profile</li>
+                    <li><span class="icon"><img src="/dist/images/message-reply-outline.png" alt="messages"></span>Messages</li>
+                    <li><span class="icon"><img src="/dist/images/clock-time-three-outline.png" alt="history"></span>History</li>
+                    <li><span class="icon"><img src="/dist/images/clipboard-multiple-outline.png" alt="tasks"></span>Tasks</li>
+                    <li><span class="icon"><img src="/dist/images/account-group.png" alt="communities"></span>Communities</li>
+                </ul>
+            </div>
+            <div class="sidebar__items--section2">
+                <ul>
+                    <li><span class="icon"><img src="/dist/images/cog-outline.png" alt="settings"></span>Settings</li>
+                    <li><span class="icon"><img src="/dist/images/help-box.png" alt="support"></span>Support</li>
+                    <li><span class="icon"><img src="/dist/images/shield-check.png" alt="privacy"></span>Privacy</li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <main class="main">
+        <seciton class="main__section">
+            <h1 class="cards__title">Your Projects</h1>
+            <div class="cards">
+                <div class="cards__card">
+                    <h3 class="cards__card--title"></h3>
+                    <p></p>
+                    <div class="cards__card--icons">
+                        <ul>
+                        <li><img src='../dist/images/star-plus-outline.png' alt='icon'/></li>
+                        <li><img src='../dist/images/eye-plus-outline.png' alt='icon'/></li>
+                        <li><img src='../dist/images/source-fork.png' alt='icon'/></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cards__card">
+                    <h3 class="cards__card--title"></h3>
+                    <p></p>
+                    <div class="cards__card--icons">
+                        <ul>
+                        <li><img src='../dist/images/star-plus-outline.png' alt='icon'/></li>
+                        <li><img src='../dist/images/eye-plus-outline.png' alt='icon'/></li>
+                        <li><img src='../dist/images/source-fork.png' alt='icon'/></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cards__card">
+                    <h3 class="cards__card--title"></h3>
+                    <p></p>
+                    <div class="cards__card--icons">
+                        <ul>
+                        <li><img src='../dist/images/star-plus-outline.png' alt='icon'/></li>
+                        <li><img src='../dist/images/eye-plus-outline.png' alt='icon'/></li>
+                        <li><img src='../dist/images/source-fork.png' alt='icon'/></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cards__card">
+                    <h3 class="cards__card--title"></h3>
+                    <p></p>
+                    <div class="cards__card--icons">
+                        <ul>
+                        <li><img src='../dist/images/star-plus-outline.png' alt='icon'/></li>
+                        <li><img src='../dist/images/eye-plus-outline.png' alt='icon'/></li>
+                        <li><img src='../dist/images/source-fork.png' alt='icon'/></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cards__card">
+                    <h3 class="cards__card--title"></h3>
+                    <p></p>
+                    <div class="cards__card--icons">
+                        <ul>
+                        <li><img src='../dist/images/star-plus-outline.png' alt='icon'/></li>
+                        <li><img src='../dist/images/eye-plus-outline.png' alt='icon'/></li>
+                        <li><img src='../dist/images/source-fork.png' alt='icon'/></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cards__card">
+                    <h3 class="cards__card--title"></h3>
+                    <p></p>
+                    <div class="cards__card--icons">
+                        <ul>
+                        <li><img src='../dist/images/star-plus-outline.png' alt='icon'/></li>
+                        <li><img src='../dist/images/eye-plus-outline.png' alt='icon'/></li>
+                        <li><img src='../dist/images/source-fork.png' alt='icon'/></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </seciton>
+    <section class="side__section">
+        <h1 class="announcements__title">Announcements</h1>
+        <div class="announcements"> 
+            <div class="announcement">
+                <h3 class="announcement__title">Site Maintenance</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatum possimus dolores necessitatibus rerum quisquam.</p>
+            </div>
+            <div class="announcement">
+                <h3 class="announcement__title">Community Share Day</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio eligendi dicta repellendus, ad totam architecto.</p>
+            </div>
+            <div class="announcement">
+                <h3 class="announcement__title">Updated Privacy Policy</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis magnam velit aut vero voluptatem illo eveniet, nostrum aspernatur!</p>
+            </div>
+        </div>
+        <h1 class="trendings__title">Trending</h1>
+        <div class="trendings">
+            <div class="trending">
+                <div class="trending__name">@togan</div>
+                <div class="trending__description">World Peace Builder</div>
+            </div>
+            <div class="trending">
+                <div class="trending__name">@morgan</div>
+                <div class="trending__description">Super Cool Project</div>
+            </div>
+            <div class="trending">
+                <div class="trending__name">@kendall</div>
+                <div class="trending__description">Life Changing App</div>
+            </div>
+            <div class="trending">
+                <div class="trending__name">@alex</div>
+                <div class="trending__description">No Traffic Maker</div>
+            </div>
+        </div>
+    </section>
+        
+    </main>
+    <script src="./js/script.js"></script>
 </body>
 </html>

@@ -11,8 +11,9 @@ $tabColor: $sidebarColor;
 $borderColor: #facc15;
 
 // Text colors
-$maintextColor: #000;
-$scondarytextColor: #fff;
+$maintextColor: $secondaryColor;
+$secondarytextColor: #000;
+$sidebartextColor: #fff;
 
 // Font sizes
 $smFont: rem(18);

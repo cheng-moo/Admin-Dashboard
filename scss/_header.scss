@@ -1,0 +1,101 @@
+@use './config' as *;
+@use './globals' as *;
+
+.header {
+    width: 90%;
+    margin-left: auto;
+    color: $secondarytextColor;
+    font-weight: 500;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: rem(32);
+    
+    &__searchbar {
+        flex:1;
+        display: flex;
+
+        &--icon {
+            padding-right: rem(27);
+            display: flex;
+            align-items: center;
+        }
+        input {
+            width: 70%;
+            border: none;
+            background-color: $secondaryColor;
+            border-radius: rem(30);
+        }
+    }
+
+    &__items {
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 43%;
+        
+
+        &--profile {
+            background-image: url("../images/profileimg.jpg");
+            min-height: rem(40);
+            min-width: rem(40);
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+    }
+}
+.nav {
+    color: $secondarytextColor;
+    display: flex;
+    font-size: $mdFont;
+    margin: 0;
+    padding-left: rem(32);
+    padding-right: rem(32);
+    
+    &__user {
+        max-width: 54%;
+        display: flex;
+        justify-content: space-between;
+        &--profile {
+            background-image: url("../images/profileimg.jpg");
+            max-height: rem(60);
+            min-width: rem(60);
+            border-radius: rem(30);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+        &--welcome {
+           max-width: 74%;
+            h1 {
+                margin: 0;
+                font-size: rem(24);
+            }
+            h5 {
+                margin: 0;
+                font-weight: 400;
+                font-size: rem(16);
+            }
+        }
+    }
+    &__items {
+        flex: 1;
+        ul {
+            color: #fff;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 100%;
+            
+            li {
+                background-color: $tabColor;
+                padding: rem(7) rem(22);
+                border-radius: rem(23);
+                font-size: rem(12);
+                font-weight: 500;
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+@use './config' as *;
+@use './globals' as *;
+
+.sidebar {
+    position: fixed;
+    background-color: $sidebarColor;
+    padding: rem(36) rem(30);
+    transform: translateX(rem(-260));
+    transition: transform 450ms ease-in-out;
+
+    // open state
+
+    &.open {
+        transform: translateX(0);
+        transition: transform 450ms ease-in-out;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        margin-bottom: rem(10);
+        
+        .logo {
+            width: 2.875rem;
+            height: 2.875rem;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        h1 {
+            font-size: rem(28);
+            padding-left: rem(16);
+        }
+    }
+    &__items {
+
+        ul li {
+            
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+           span {
+               padding-right: rem(15);
+           } 
+        }
+
+        &--section1 {
+            margin-bottom: rem(32);
+            & ul li:not(:last-child) {
+                margin-bottom: rem(5);
+            }
+        }
+        &--section2 {
+            & ul li:not(:last-child) {
+                margin-bottom: rem(5);
+            }
+        }
+    }
+}

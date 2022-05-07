@@ -1,0 +1,44 @@
+@use './config' as *;
+@use './globals' as *;
+
+.hamburger__menu {
+    &.open {
+         span {
+        opacity: 1;
+        transform: rotate(45deg) translate(2px,-5px);
+
+        &:nth-last-child(2) {
+            opacity: 0;
+            transform: rotate(0deg) scale(0.2,0.2);
+        }
+        &:nth-last-child(1) {
+            transform: rotate(-45deg) translate(3px, -1px);
+        }
+         }
+    }
+
+    width: rem(30);
+    display: block;
+    top: rem(30);
+    left: 2vw;
+    z-index: 5;
+    position: fixed;
+    span {
+        width: 100%;
+        display: block;
+        background-color: #000;     
+        height: rem(3);
+        transform-origin: 4px 0px;
+        transition: transform 450ms ease-in-out, opacity 450ms ease-in-out;
+        &:first-child {
+            transform-origin: 0% 0%;
+        }
+        &:nth-last-child(2) {
+            transform-origin: 0% 100%;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: rem(6);
+        }
+    }
+}

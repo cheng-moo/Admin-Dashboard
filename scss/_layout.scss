@@ -1,0 +1,24 @@
+@use './config' as *;
+@use './globals' as *;
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75px 75px 1fr;
+}
+.header {
+    
+    grid-row: 1/2;
+}
+.nav {
+    
+    grid-row: 2/3;
+}
+.sidebar {
+    
+    grid-row: 1/-1;
+}
+.main {
+    
+    grid-row: 3/-1;
+}
