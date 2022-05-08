@@ -36,3 +36,17 @@ li {
 h1,h2,h3 {
     font-size: 2rem;
 }
+.hide-for-desktop {
+    @include breakpoint-up(large) {
+        display: none;
+    }
+}
+input[type="search"] {
+    -webkit-appearance: none;
+    appearance: none;
+    font-family: inherit;
+    font-size: 100%;
+    padding: rem(3);
+    padding-left: rem(20);
+    
+}

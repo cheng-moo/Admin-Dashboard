@@ -9,14 +9,35 @@
         font-size: 1.5rem;
         color: $secondarytextColor;
     }
+
+    @include breakpoint-up(large) {
+        padding: 0;
+        min-height: rem(246);
+        padding: rem(20);
+        max-widtH: rem(264);
+    }
 }
 .trendings {
     background-color: #fff;
     padding: rem(25) rem(25);
     border-radius: rem(15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    @include breakpoint-down(medium) {
+        min-height: 85%;
+    }
     &__title {
         font-size: 1.5rem;
         color: $secondarytextColor;
+    }
+    @include breakpoint-up(large) {
+       
+        padding: 0.9375rem;
+        max-width: 16.5rem;
+        min-height: 20.6775rem;
     }
 }
 .announcement {
@@ -25,21 +46,34 @@
        color: $secondarytextColor;
        margin: 0;
        margin-top: rem(20);
+
+       @include breakpoint-up(large) {
+        margin: 0;
+        margin-top: rem(15);
+    }
     }
     &:last-child {
         p {
             border: none;
         }
     }
+
     p {
         font-size: rem(13);
         margin: 0;
         padding-bottom: rem(20);
         border-bottom: 1px solid black;
+
+        @include breakpoint-up(large) {
+            line-height: 1.2;
+            padding: 0;
+            padding-bottom: rem(15);
+        }
        
     }
 }
 .trending {
+    position: relative;
     &__name {
         font-size: rem(15);
         color: $secondarytextColor;
@@ -47,5 +81,85 @@
     }
     &__description {
         font-size: rem(13);
+    }
+    &:first-child::before {
+        content: '';
+        background-image: url("../images/profileimg.jpg");
+        min-height: 2.5rem;
+        min-width: 2.5rem;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: absolute;
+        top: 0;
+        left: -53px;
+
+        @include breakpoint-down(medium) {
+            min-height: rem(60);
+            min-width: rem(60);
+            top: -14px;
+            left: calc(-68px - 1vw);
+        }
+    }
+    &:nth-child(2)::before {
+        content: '';
+        background-image: url("../images/prof1.jpg");
+        min-height: 2.5rem;
+        min-width: 2.5rem;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: absolute;
+        top: 0;
+        left: -53px;
+        @include breakpoint-down(medium) {
+         
+            min-height: rem(60);
+            min-width: rem(60);
+            top: -14px;
+            left: calc(-68px - 1vw);
+        }
+    }
+    &:nth-child(3)::before {
+        content: '';
+        background-image: url("../images/prof2.jpeg");
+        min-height: 2.5rem;
+        min-width: 2.5rem;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: absolute;
+        top: 0;
+        left: -53px;
+        @include breakpoint-down(medium) {
+           
+            min-height: rem(60);
+            min-width: rem(60);
+            top: -14px;
+            left: calc(-68px - 1vw);
+        }
+    }
+    &:last-child::before {
+        content: '';
+        background-image: url("../images/prof3.jpg");
+        min-height: 2.5rem;
+        min-width: 2.5rem;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: absolute;
+        top: 0;
+        left: -53px;
+        @include breakpoint-down(medium) {
+    
+            min-height: rem(60);
+            min-width: rem(60);
+            top: -14px;
+            left: calc(-68px - 1vw);
+        }
     }
 }

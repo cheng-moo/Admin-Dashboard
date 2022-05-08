@@ -13,7 +13,7 @@
                 font-size: 1.5rem;
             }
             &__card {
-                
+                transition: transform 300ms ease-in-out;
                 background-color: $mainColor;
                 padding: 15px 30px;
                 border-radius: rem(15);
@@ -21,10 +21,16 @@
                 flex-direction: column;
                 justify-content: space-between;
                 border-left: rem(8) solid $borderColor;
+                box-shadow: 0px 1px 4px 1px #0000009c;
+                cursor: pointer;
                 &--title {
                     font-size: rem(14);
                     margin-bottom: rem(-28);
                     color: $secondarytextColor;
+
+                    @include breakpoint-up(large) {
+                        margin-bottom: rem(6);
+                    }
 
                 }
                 p {
@@ -43,6 +49,10 @@
                     li {
 
                     }
+                }
+
+                &:hover {
+                    transform: rotate(3deg) translate(7px,-8px) scale(1.02);
                 }
             }
         }
